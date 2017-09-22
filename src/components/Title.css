@@ -1,8 +1,8 @@
 .title {
-	flex: 0 1 auto;
-	padding: 5px 20px;
+	text-align: center;
 	background-color: black;
 	color: white;
-	border-radius: 10px;
-	width: 300px;
+	width: 610px;
+	margin: 0 auto;
+	border-radius: 20px;
 }

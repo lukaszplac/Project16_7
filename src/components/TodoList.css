@@ -5,16 +5,5 @@
 	color: white;
 	border-radius: 10px;
 	list-style: circle;
-	width: 300px;
-}
-
-.TodoList>li {
-	font-size: 14px;
-	padding: 5px;
-}
-
-.TodoList>li:hover {
-	padding: 5px 0 5px 40px;
-	color: cyan;
-	cursor: pointer;
+	width: auto;
 }

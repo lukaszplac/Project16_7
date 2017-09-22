@@ -3,6 +3,7 @@ import uuid from 'uuid';
 import style from './App.css';
 import Title from '../components/Title'
 import TodoList from '../components/TodoList'
+import TodoForm from '../components/TodoForm'
 
 class App extends React.Component {
 
@@ -24,8 +25,7 @@ class App extends React.Component {
                     {
                     id: 4,
                     text: 'feed my dog'
-                    }],
-            count: 0,
+                    }]
         };
     }
 
@@ -35,7 +35,7 @@ class App extends React.Component {
             id: uuid.v4(),
         };
         const data = [...this.state.data, todo];
-        this.setState({data: data, count: count+1}); //ES6 rozumie to jako {data: data}
+        this.setState({data: data}); //ES6 rozumie to jako {data: data}
     }
 
     removeTodo(id) {
@@ -45,9 +45,16 @@ class App extends React.Component {
 
 	render() {
     return (
-        <div className={style.TodoApp}>
-            <Title title="Kodilla TodoApp"/>
-            <TodoList list={this.state.data} remove={this.removeTodo.bind(this)}/>
+        <div>
+        <Title title="Kodilla TodoApp"/>
+            <div className={style.TodoApp}>
+                <div className={style.col1}>
+                    <TodoForm add={this.addTodo.bind(this)}/>
+                </div>
+                <div className={style.col2}>
+                    <TodoList list={this.state.data} remove={this.removeTodo.bind(this)}/>
+                </div>
+            </div>
         </div>
         );
     }
