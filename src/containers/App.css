@@ -24,19 +24,20 @@
 }
 
 .col1 {
-    width: 300px;
+    width: 310px;
 }
 
 .col2 {
-    width: 460px;
+    width: 500px;
 }
 
 .col3 {
     flex: 0 1 auto;
-    width: 200px;
+    width: 350px;
     border-radius: 20px;
     border: 1px solid black;
     margin: 20px 5px;
-    padding: 5px;
+    padding: 10px;
     word-wrap: break-word;
+    text-align: justify;
 }
