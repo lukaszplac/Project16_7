@@ -1,9 +1,14 @@
+.App {
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1.5px;
+}
+
 .TodoApp {
     background-color: white;
     color: #222;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
     align-content: center;
@@ -15,6 +20,23 @@
     flex: 0 1 auto;
     background-color: black;
     border-radius: 20px;
+    margin: 20px 5px;
+}
+
+.col1 {
     width: 300px;
-    margin: 10px 5px;
+}
+
+.col2 {
+    width: 460px;
+}
+
+.col3 {
+    flex: 0 1 auto;
+    width: 200px;
+    border-radius: 20px;
+    border: 1px solid black;
+    margin: 20px 5px;
+    padding: 5px;
+    word-wrap: break-word;
 }
